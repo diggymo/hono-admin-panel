@@ -1,6 +1,10 @@
+https://dev.classmethod.jp/articles/hono-jsx-admin-panel/
+
+
+
 ```
-npm install
-npm run dev
+pnpm install
+pnpm run dev
 ```
 
 ```

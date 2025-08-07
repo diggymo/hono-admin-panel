@@ -23,6 +23,13 @@ export class CdkStack extends cdk.Stack {
         },
       },
     });
+    fn.addToRolePolicy(
+      new cdk.aws_iam.PolicyStatement({
+        effect: cdk.aws_iam.Effect.ALLOW,
+        actions: ["s3:PutObject", "s3:GetObject"],
+        resources: [`arn:aws:s3:::hono-survey-csv-data/*`],
+      })
+    );
 
     const functionUrl = fn.addFunctionUrl({
       authType: FunctionUrlAuthType.NONE,
