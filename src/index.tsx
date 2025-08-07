@@ -20,8 +20,8 @@ const app = new Hono();
 
 app.use(
   basicAuth({
-    username: "morimorikochan",
-    password: "awesomePassword",
+    username: "diggymo",
+    password: "diggymo",
   })
 );
 
